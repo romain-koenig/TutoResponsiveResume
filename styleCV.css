@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'AlexBrush-Regular';
+    src: url("AlexBrush-Regular.ttf");
+}
+
+@media all and (max-width: 1024px) {
+    /* Rédigez vos propriétés CSS ici */
+    .black_column {
+        display: none;
+    }
+    #cv-colonnes {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+body {
+    font-family: 'Verdana';
+    /*3    Appliquer une image de fond à la page*/
+    background-image: url("img/background.png");
+}
+
+header {
+    background-color: #55555522;
+}
+
+header.cv-header {
+    background-color: #FFFFFF00;
+    display: flex;
+}
+
+.cv-header-content {
+    width: 80%;
+}
+
+.cv-header-photo {
+    width: 20%;
+}
+
+footer {
+    background-color: #55555522;
+}
+
+h1 {
+    /*4    Utiliser une police personnalisée via @font-face*/
+    font-family: 'AlexBrush-Regular';
+    font-size: 4em;
+    /*6    Définir une ombre à un élément*/
+    text-shadow: 2px 2px 4px grey;
+}
+
+h2 {
+    /*1    Changer la couleur d'un des textes*/
+    color: #333333;
+    /*5    Définir une bordure à un élément*/
+    border: 2px #333333 solid;
+}
+
+.user-icon {
+    float: right;
+    margin-right: 3px;
+}
+
+p {
+    /*2    Changer l'alignement d'un des textes*/
+    text-align: justify;
+}
+
+.general {
+    display: flex;
+}
+
+.black_column {
+    width: 50px;
+    background-color: black;
+    border-radius: 3px;
+    margin-right: 10px
+}
+
+.cv-content {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#cv-colonnes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cv-colonne {
+    margin: 3px;
+    padding: 3px;
+}
+
+.cv-colonne:nth-child(1) {
+    flex: 1;
+}
+
+.cv-colonne:nth-child(2) {
+    flex: 1;
+}
+
+.cv-colonne:nth-child(3) {
+    flex: 1;
+}
